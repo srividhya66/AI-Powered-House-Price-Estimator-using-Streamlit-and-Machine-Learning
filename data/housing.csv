@@ -1,0 +1,16 @@
+location,size,total_sqft,bath,price
+Bangalore,2 BHK,1000,2,50
+Bangalore,3 BHK,1500,3,80
+Hyderabad,2 BHK,900,2,45
+Hyderabad,3 BHK,1300,3,70
+Chennai,2 BHK,1100,2,55
+Chennai,3 BHK,1600,3,85
+Delhi,2 BHK,950,2,48
+Delhi,3 BHK,1400,3,75
+Mumbai,2 BHK,1050,2,60
+Mumbai,3 BHK,1550,3,90
+import pandas as pd
+
+df = pd.read_csv("data/housing.csv")
+print(df.head())
+print(df.describe())
